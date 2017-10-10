@@ -10,12 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var count = 0
-    // Variable for button color changer.
-    
-    
     // Made a link to button in storyboard for output.
     @IBOutlet weak var firstButton: UIButton!
+    
+    // Variable for button color changer.
+    var count = 0
     
     // Made an action link for button which changes color based on even and odds from when you press it.
     @IBAction func firstMethod(_ sender: UIButton)
@@ -34,6 +33,7 @@ class ViewController: UIViewController {
         }
         // Then I call createRandomColor() which changes the backgroundColor.
         view.backgroundColor = createRandomColor()
+        firstButton.setTitleColor(createRandomColor(), for: .normal)
     }
     
     // This here is where I make the color changer random for the background.
@@ -42,8 +42,8 @@ class ViewController: UIViewController {
         // These all make new values to be used for random colors.
         let newColor :UIColor
         let redValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
-        let greenValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
-        let blueValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
+        let greenValue :CGFloat = CGFloat (drand48())
+        let blueValue :CGFloat = CGFloat (Double (arc4random() % 256) / 255.00)
             newColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha:CGFloat(1.0))
         return newColor // I return newColor.
     }
