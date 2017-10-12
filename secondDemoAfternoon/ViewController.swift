@@ -41,20 +41,42 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var firstLabel: UILabel!
     
-    @IBAction func firstSwitchMethod(_ sender: UISwitch) {
+    @IBAction func firstSwitchMethod(_ sender: UISwitch)
+    {
         if !(firstSwitch.isOn == true )
         {
-            view.backgroundColor = .black
-            firstButton.isHidden = true
-            firstLabel.isHidden = false
+            var wait = 5
+            while (wait == 5)
+            {
+                if wait == 0
+                {
+                    view.backgroundColor = .black
+                    firstButton.isHidden = true
+                    firstLabel.isHidden = false
+                }
+                wait -= 1
+            }
         }
         else
         {
-            view.backgroundColor = .white
-            firstButton.isHidden = false
-            firstLabel.isHidden = true
+            var wait = 5
+            
+            while (wait == 5)
+            {
+                if wait == 0
+                {
+                    view.backgroundColor = .white
+                    firstButton.isHidden = false
+                    firstLabel.isHidden = true
+                }
+                wait -= 1
+            }
         }
     }
+    
+    
+    @IBOutlet weak var myProgressBar: UIProgressView!
+    
     
     
     // This here is where I make the color changer random for the background.
