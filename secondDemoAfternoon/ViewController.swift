@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    private lazy var colorTool : ColorTools = ColorTools()
+    
     // Made a link to button in storyboard for output.
     @IBOutlet weak var firstButton: UIButton!
     
@@ -32,8 +34,8 @@ class ViewController: UIViewController {
             count += 1
         }
         // Then I call createRandomColor() which changes the backgroundColor.
-        view.backgroundColor = createRandomColor()
-        firstButton.setTitleColor(createRandomColor(), for: .normal)
+        view.backgroundColor = colorTool.createRandomColor()
+        firstButton.setTitleColor(colorTool.createRandomColor(), for: .normal)
     }
     
     // Link to the button of its Outlet
@@ -41,12 +43,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var firstLabel: UILabel!
     
+    var wait = 5
+    
     @IBAction func firstSwitchMethod(_ sender: UISwitch)
     {
-        if !(firstSwitch.isOn == true )
+        while !(firstSwitch.isOn == true )
         {
-            var wait = 5
-            while (wait == 5)
+            while (wait != 0)
             {
                 if wait == 0
                 {
@@ -58,11 +61,10 @@ class ViewController: UIViewController {
                 wait -= 1
             }
         }
-        else
+        
+        while (firstSwitch.isOn == true)
         {
-            var wait = 5
-            
-            while (wait == 5)
+            while (wait != 0)
             {
                 if wait == 0
                 {
@@ -78,21 +80,6 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var myProgressBar: UIProgressView!
-    
-    
-    
-    // This here is where I make the color changer random for the background.
-    private func createRandomColor() -> UIColor
-    {
-        // These all make new values to be used for random colors.
-        let newColor :UIColor
-        let redValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
-        let greenValue :CGFloat = CGFloat (drand48())
-        let blueValue :CGFloat = CGFloat (Double (arc4random() % 256) / 255.00)
-            newColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha:CGFloat(1.0))
-        return newColor // I return newColor.
-    }
-
 
     override func viewDidLoad()
     {
