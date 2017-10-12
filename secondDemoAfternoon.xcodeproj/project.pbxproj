@@ -531,6 +531,7 @@
 				A604227F1F8D3CC400C2AC47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A60422801F8D3CC400C2AC47 /* Build configuration list for PBXNativeTarget "secondDemoAfternoonTests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +540,7 @@
 				A60422821F8D3CC400C2AC47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A60422831F8D3CC400C2AC47 /* Build configuration list for PBXNativeTarget "secondDemoAfternoonUITests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +549,7 @@
 				A60422851F8D3CC400C2AC47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

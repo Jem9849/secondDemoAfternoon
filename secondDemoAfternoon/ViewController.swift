@@ -36,6 +36,27 @@ class ViewController: UIViewController {
         firstButton.setTitleColor(createRandomColor(), for: .normal)
     }
     
+    // Link to the button of its Outlet
+    @IBOutlet weak var firstSwitch: UISwitch!
+    
+    @IBOutlet weak var firstLabel: UILabel!
+    
+    @IBAction func firstSwitchMethod(_ sender: UISwitch) {
+        if !(firstSwitch.isOn == true )
+        {
+            view.backgroundColor = .black
+            firstButton.isHidden = true
+            firstLabel.isHidden = false
+        }
+        else
+        {
+            view.backgroundColor = .white
+            firstButton.isHidden = false
+            firstLabel.isHidden = true
+        }
+    }
+    
+    
     // This here is where I make the color changer random for the background.
     private func createRandomColor() -> UIColor
     {
