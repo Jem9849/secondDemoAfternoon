@@ -14,6 +14,7 @@
 		A60422631F8D3CC400C2AC47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60422611F8D3CC400C2AC47 /* LaunchScreen.storyboard */; };
 		A604226E1F8D3CC400C2AC47 /* secondDemoAfternoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A604226D1F8D3CC400C2AC47 /* secondDemoAfternoonTests.swift */; };
 		A60422791F8D3CC400C2AC47 /* secondDemoAfternoonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60422781F8D3CC400C2AC47 /* secondDemoAfternoonUITests.swift */; };
+		A628D2C01F8FF53F000D7747 /* SecondScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A628D2BF1F8FF53F000D7747 /* SecondScreenController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A60422741F8D3CC400C2AC47 /* secondDemoAfternoonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = secondDemoAfternoonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60422781F8D3CC400C2AC47 /* secondDemoAfternoonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondDemoAfternoonUITests.swift; sourceTree = "<group>"; };
 		A604227A1F8D3CC400C2AC47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A628D2BF1F8FF53F000D7747 /* SecondScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			children = (
 				A604225A1F8D3CC400C2AC47 /* ViewController.swift */,
 				A60422581F8D3CC400C2AC47 /* AppDelegate.swift */,
+				A628D2BF1F8FF53F000D7747 /* SecondScreenController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			files = (
 				A604225B1F8D3CC400C2AC47 /* ViewController.swift in Sources */,
 				A60422591F8D3CC400C2AC47 /* AppDelegate.swift in Sources */,
+				A628D2C01F8FF53F000D7747 /* SecondScreenController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -53,6 +53,7 @@ class ViewController: UIViewController {
                     view.backgroundColor = .black
                     firstButton.isHidden = true
                     firstLabel.isHidden = false
+                    myProgressBar.isHidden = true
                 }
                 wait -= 1
             }
@@ -68,6 +69,7 @@ class ViewController: UIViewController {
                     view.backgroundColor = .white
                     firstButton.isHidden = false
                     firstLabel.isHidden = true
+                    myProgressBar.isHidden = true
                 }
                 wait -= 1
             }
