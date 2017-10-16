@@ -43,56 +43,25 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var firstLabel: UILabel!
     
-    var wait = 5
     
     @IBAction func firstSwitchMethod(_ sender: UISwitch)
     {
-        if wait != 0
-        {
-            firstSwitch.isEnabled = false
-        }
-        else
-        {
-            firstSwitch.isEnabled = true
-        }
         
-        while !(firstSwitch.isOn == true )
-        {
-            
-            while (wait != -1)
-            {
-                if wait == 0
-                {
-                    view.backgroundColor = .black
-                    firstButton.isHidden = true
-                    firstLabel.isHidden = false
-                    myProgressBar.isHidden = true
-                }
-                else
-                {
-                wait -= 1
-                }
-            }
-        }
+                if !(firstSwitch.isOn == true)
+                    {
+                        view.backgroundColor = .black
+                        firstButton.isHidden = true
+                        firstLabel.isHidden = false
+                        myProgressBar.isHidden = true
+                    }
         
-        while (firstSwitch.isOn == true)
-        {
-            
-            while (wait != -1)
-            {
-                if wait == 0
-                {
-                    view.backgroundColor = .white
-                    firstButton.isHidden = false
-                    firstLabel.isHidden = true
-                    myProgressBar.isHidden = true
-                }
-                else
-                {
-                wait -= 1
-                }
-            }
-        }
+                else if (firstSwitch.isOn == true)
+                    {
+                        view.backgroundColor = .white
+                        firstButton.isHidden = false
+                        firstLabel.isHidden = true
+                        myProgressBar.isHidden = true
+                    }
     }
     
     
