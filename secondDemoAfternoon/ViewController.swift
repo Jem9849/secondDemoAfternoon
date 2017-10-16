@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         while !(firstSwitch.isOn == true )
         {
             
-            while (wait != 0)
+            while (wait != -1)
             {
                 if wait == 0
                 {
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
         while (firstSwitch.isOn == true)
         {
             
-            while (wait != 0)
+            while (wait != -1)
             {
                 if wait == 0
                 {
@@ -87,7 +87,10 @@ class ViewController: UIViewController {
                     firstLabel.isHidden = true
                     myProgressBar.isHidden = true
                 }
+                else
+                {
                 wait -= 1
+                }
             }
         }
     }
