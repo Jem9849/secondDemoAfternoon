@@ -47,8 +47,18 @@ class ViewController: UIViewController {
     
     @IBAction func firstSwitchMethod(_ sender: UISwitch)
     {
+        if wait != 0
+        {
+            firstSwitch.isEnabled = false
+        }
+        else
+        {
+            firstSwitch.isEnabled = true
+        }
+        
         while !(firstSwitch.isOn == true )
         {
+            
             while (wait != 0)
             {
                 if wait == 0
@@ -58,12 +68,16 @@ class ViewController: UIViewController {
                     firstLabel.isHidden = false
                     myProgressBar.isHidden = true
                 }
+                else
+                {
                 wait -= 1
+                }
             }
         }
         
         while (firstSwitch.isOn == true)
         {
+            
             while (wait != 0)
             {
                 if wait == 0

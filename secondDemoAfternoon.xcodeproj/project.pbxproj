@@ -16,6 +16,7 @@
 		A60422791F8D3CC400C2AC47 /* secondDemoAfternoonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60422781F8D3CC400C2AC47 /* secondDemoAfternoonUITests.swift */; };
 		A628D2C01F8FF53F000D7747 /* SecondScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A628D2BF1F8FF53F000D7747 /* SecondScreenController.swift */; };
 		A628D2C41F8FF9E8000D7747 /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A628D2C31F8FF9E8000D7747 /* ColorTools.swift */; };
+		A6B02E421F9539F60032AD0E /* ThirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B02E411F9539F60032AD0E /* ThirdScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A604227A1F8D3CC400C2AC47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A628D2BF1F8FF53F000D7747 /* SecondScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenController.swift; sourceTree = "<group>"; };
 		A628D2C31F8FF9E8000D7747 /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
+		A6B02E411F9539F60032AD0E /* ThirdScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				A604225A1F8D3CC400C2AC47 /* ViewController.swift */,
 				A60422581F8D3CC400C2AC47 /* AppDelegate.swift */,
 				A628D2BF1F8FF53F000D7747 /* SecondScreenController.swift */,
+				A6B02E411F9539F60032AD0E /* ThirdScreenViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A604225B1F8D3CC400C2AC47 /* ViewController.swift in Sources */,
+				A6B02E421F9539F60032AD0E /* ThirdScreenViewController.swift in Sources */,
 				A60422591F8D3CC400C2AC47 /* AppDelegate.swift in Sources */,
 				A628D2C01F8FF53F000D7747 /* SecondScreenController.swift in Sources */,
 				A628D2C41F8FF9E8000D7747 /* ColorTools.swift in Sources */,

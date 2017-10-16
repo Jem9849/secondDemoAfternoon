@@ -87,6 +87,14 @@
                                     <segue destination="l4V-Rp-k1n" kind="show" id="sOJ-ae-0SS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXl-3Q-1C3">
+                                <rect key="frame" x="163" y="521" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="OhB-fc-bXU" kind="show" id="9yZ-MN-QWE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -101,5 +109,36 @@
             </objects>
             <point key="canvasLocation" x="207" y="-549"/>
         </scene>
+        <!--Third Screen View Controller-->
+        <scene sceneID="ObF-Qk-nMg">
+            <objects>
+                <viewController id="OhB-fc-bXU" customClass="ThirdScreenViewController" customModule="secondDemoAfternoon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y9p-81-fda"/>
+                        <viewControllerLayoutGuide type="bottom" id="0nu-WR-vxx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hwc-nT-BzS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhQ-C9-iyO">
+                                <rect key="frame" x="164" y="334" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Vcp-GZ-qCs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BK8-mt-cuJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="-549"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="EAt-ud-ZEv"/>
+    </inferredMetricsTieBreakers>
 </document>
