@@ -43,6 +43,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var firstLabel: UILabel!
     
+    @IBOutlet weak var secondLabel: UIButton!
+    
+    @IBOutlet weak var thirdLabel: UIButton!
     
     @IBAction func firstSwitchMethod(_ sender: UISwitch)
     {
@@ -53,6 +56,8 @@ class ViewController: UIViewController {
                         firstButton.isHidden = true
                         firstLabel.isHidden = false
                         myProgressBar.isHidden = true
+                        thirdLabel.isHidden = true
+                        secondLabel.isHidden = true
                     }
         
                 else if (firstSwitch.isOn == true)
@@ -61,6 +66,8 @@ class ViewController: UIViewController {
                         firstButton.isHidden = false
                         firstLabel.isHidden = true
                         myProgressBar.isHidden = true
+                        thirdLabel.isHidden = false
+                        secondLabel.isHidden = false
                     }
     }
     

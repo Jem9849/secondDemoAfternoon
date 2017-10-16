@@ -103,6 +103,8 @@
                         <outlet property="firstLabel" destination="ZKc-Ng-jV3" id="llr-8o-3Kf"/>
                         <outlet property="firstSwitch" destination="D8K-iG-8Ob" id="pUp-4b-ZbR"/>
                         <outlet property="myProgressBar" destination="3eC-wW-Hm4" id="B6V-g2-jO7"/>
+                        <outlet property="secondLabel" destination="MXl-3Q-1C3" id="IeM-F7-PEf"/>
+                        <outlet property="thirdLabel" destination="ypF-pj-jF0" id="WZx-yS-S7e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
