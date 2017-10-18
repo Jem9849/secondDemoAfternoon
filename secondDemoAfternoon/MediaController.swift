@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 public class MediaController: UIViewController
 {
     private lazy var color : ColorTools = ColorTools()
     private var imageCounter : Int = 0
+    private var soundPlayer : AVAudioPlayer?
     
     @IBOutlet weak var changePicture: UIButton!
     
@@ -25,6 +27,22 @@ public class MediaController: UIViewController
     {
         changeImage()
         view.backgroundColor = color.createRandomColor()
+    }
+    
+    private func loadAudioFile() -> Void
+    {
+        if let soundURL = NSDataAsset(name: "Redguard")
+        {
+            do
+            {
+                try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+                try! AVAudioSession.sharedInstance().setActive(true)
+                
+                try soundPlayer = AVAudioPlayer(data: soundURL.data, fileTypeHint: AVFileType.mp3.rawValue)
+                volumeSlider.maximumValue = Float ((soundPlayer?.duration)!)
+         //       Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: (#selector(self.updateSlider)), userInfo: nil, repeats: true)
+            }
+        }
     }
     
     private func changeImage() -> Void
@@ -52,7 +70,7 @@ public class MediaController: UIViewController
         }
         else if (imageCounter == 4)
         {
-            imageView.image = UIImage(named: "black")
+            imageView.image = UIImage(named: "idk")
         }
         else
         {
