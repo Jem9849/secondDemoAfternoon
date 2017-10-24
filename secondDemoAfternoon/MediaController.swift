@@ -117,7 +117,7 @@ public class MediaController: UIViewController
                 soundPlayer?.play()
             }
         }
-        
+        // less stable version
         /* if ((soundPlayer?.isPlaying)!)
         {
             soundPlayer?.pause()
@@ -128,7 +128,7 @@ public class MediaController: UIViewController
     public override func viewDidLoad() -> Void
     {
         super.viewDidLoad()
-
+        loadAudioFile()
         // Do any additional setup after loading the view.
     }
 
