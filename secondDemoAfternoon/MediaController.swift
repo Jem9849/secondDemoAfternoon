@@ -38,11 +38,21 @@ public class MediaController: UIViewController
                 try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
                 try! AVAudioSession.sharedInstance().setActive(true)
                 
-                try soundPlayer = AVAudioPlayer(data: soundURL.data, fileTypeHint: AVFileType.mp3.rawValue)
+                try soundPlayer = AVAudioPlayer(data: soundURL.data) //fileTypeHint: AVFileType.mp3.rawValue)
                 volumeSlider.maximumValue = Float ((soundPlayer?.duration)!)
-         //       Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: (#selector(self.updateSlider)), userInfo: nil, repeats: true)
+                Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: (#selector(self.updateSlider)), userInfo: nil, repeats: true)
+            }
+                
+           catch
+            {
+                print("Audio did not load correctly.")
             }
         }
+    }
+    
+    @objc private func updateSlider() -> Void
+    {
+        volumeSlider.value = Float ((soundPlayer?.currentTime)!)
     }
     
     private func changeImage() -> Void
@@ -81,13 +91,38 @@ public class MediaController: UIViewController
     
     @IBAction func playStopClick(_ sender: UIButton)
     {
-        
+        playMusicFile()
+        view.backgroundColor = color.createRandomColor()
     }
     
     
     @IBAction func volumeSliderMove(_ sender: UISlider)
     {
+        let seekTime = Double (volumeSlider.value)
+        soundPlayer?.currentTime = seekTime
+    }
+    
+    private func playMusicFile() -> Void
+    {
+        if let isPlaying = soundPlayer?.isPlaying
+        {
+            if (isPlaying)
+            {
+                playPause.setTitle("|>", for: .normal)
+                soundPlayer?.pause()
+            }
+            else
+            {
+                playPause.setTitle("||", for: .normal)
+                soundPlayer?.play()
+            }
+        }
         
+        /* if ((soundPlayer?.isPlaying)!)
+        {
+            soundPlayer?.pause()
+        }
+         */
     }
     
     public override func viewDidLoad() -> Void

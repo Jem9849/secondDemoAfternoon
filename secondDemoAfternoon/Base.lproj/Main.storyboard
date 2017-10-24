@@ -198,7 +198,7 @@
                                 <rect key="frame" x="164" y="423" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="l l"/>
+                                <state key="normal" title="|&gt;"/>
                                 <connections>
                                     <action selector="playStopClick:" destination="tBq-Vl-8QP" eventType="touchUpInside" id="AST-CG-bGQ"/>
                                 </connections>
